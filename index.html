@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="background-animation" aria-hidden="true">
+      <span class="bg-shape bg-shape-1"></span>
+      <span class="bg-shape bg-shape-2"></span>
+      <span class="bg-shape bg-shape-3"></span>
+      <span class="bg-shape bg-shape-4"></span>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Narmadha R</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="btn btn-theme" aria-label="Toggle theme">Toggle Theme</button>
+      </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fullstack Developer</span>
+            <h1>Hi, I’m Narmadha — building modern web experiences with clean code.</h1>
+            <p>
+              I create responsive, accessible, fast web apps using HTML, CSS, JavaScript and reactjs.
+              Let&rsquo;s turn ideas into polished products.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Work</a>
+              <a class="btn btn-secondary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <h2>About Me</h2>
+              <p>
+                I am a fullstack developer focused on building web applications that
+                look great, perform well, and deliver real value.
+              </p>
+              <ul>
+                <li>React, node.js, LLMs, Databases</li>
+                <li>REST APIs &amp; Integration</li>
+                <li>Responsive UI &amp; animations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-light">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Who I Am</span>
+            <h2>Passionate about building clean, scalable web applications.</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p>
+                With experience across frontend and backend technologies, I enjoy designing
+                interfaces that are intuitive and writing backend services that are reliable.
+              </p>
+              <p>
+                My process includes planning, writing well-structured code, and optimizing
+                performance so users get a fast experience on any device.
+              </p>
+              <a class="btn btn-primary" href="resume narmadha.pdf" download>Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">My Skills</span>
+            <h2>Frontend, backend, and data analysis.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, Reactjs, UI&UX, responsive layouts, animation.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <p>Node.js, REST APIs, MongoDB, SQL, authentication.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Tools</h3>
+              <p>Git, Github, streamlit, Vite, VS code, testing, deployment, figma, Power BI, Google Colab, Excel, NumPy, Pandas, Matplotlib, Seaborn.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-light">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Work</span>
+            <h2>Selected projects built with modern tools.</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card" tabindex="0">
+              <h3>Cryptoplace Website</h3>
+              <p>Developed a cryptocurrency information platform that displays real-time market trends, coin details, and price analytics.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>CoinGecko API</span><span>React</span><span>node.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/crypto_curr" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="https://crypto-curr-xi.vercel.app/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+              </div>
+            </article>
+           
+            <article class="project-card" tabindex="0">
+              <h3>Sales Forecasting Model</h3>
+              <p>Developed a machine learning model to predict future sales trends based on historical data and market indicators.</p>
+              <div class="project-tags">
+                <span>Streamlit</span><span>Numpy</span><span>Panda</span><span>Matplotlib</span><span>Seaborn</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/sales-forecast-app" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="https://sales-forecast-app-8dszjhss7bbxzlsafv7hbg.streamlit.app/" class="project-link">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" tabindex="0">
+              <h3>Sentimental analysis</h3>
+              <p>Developed a real-time sentimental analysis system to classify customer reviews and social media posts as positive, negative, or neutral.</p>
+              <div class="project-tags">
+                <span>Streamlit</span><span>pandas</span><span>json</span><span>Textblob</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/sentimental" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="https://sentimental-ukklc8wbvqj36aarpehfcb.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" tabindex="0">
+              <h3>Portfolio Website</h3>
+              <p>Created a personal portfolio website showcasing skills, projects, certifications, and contact information.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/yourusername/portfolio-site" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="https://yourusername.github.io/portfolio-site" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" tabindex="0">
+              <h3>Exam Evaluator</h3>
+              <p>Developed a real-time exam evaluation system that provides instant feedback and performance analytics.</p>
+              <div class="project-tags">
+                <span>Streamlit</span><span>PyPdf2</span><span>Textblob</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/exam-evaluator" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="https://exam-evaluator-jlpf5weipbsop2tbjhhtk7.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+              </div>
+            </article>
+              <article class="project-card" tabindex="0">
+              <h3>Ice Cream Shop Application</h3>
+              <p>Designed and developed a responsive e-commerce website for an ice cream shop with product catalog and online ordering features.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>Javascript</span><span>MySQL</span><span>PHP</span><span>XAMPP</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/frosty" target="_blank" rel="noopener" class="project-link">GitHub</a>
+              </div>
+            </article>
+            <article class="project-card" tabindex="0">
+              <h3>Digital Learning Platform for Rural School Students in Nabha</h3>
+              <p>Developed an offline-capable learning platform enabling rural students to access educational content, quizzes, and progress tracking without continuous internet connectivity.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PWA</span><span>IndexedDB</span><span>Service Worker</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/narmadharajan17-ux/Digital-learning-platform" target="_blank" rel="noopener" class="project-link">GitHub</a>
+               
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section section-light">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Certificates</span>
+            <h2>Professional certificates and training achievements.</h2>
+          </div>
+          <div class="certificates-grid">
+            <article class="certificate-card">
+              <h3>Fullstack Development Internship </h3>
+              <p>Completed hands-on training in full-stack web development, building responsive applications using modern frontend and backend technologies.</p>
+            </article>
+            <article class="certificate-card">
+              <h3>Google Data Analytics Certificate</h3>
+              <p>Gained expertise in data collection, cleaning, visualization, and analysis to support data-driven decision-making.</p>
+            </article>
+            <article class="certificate-card">
+              <h3>Google Generative AI certificate</h3>
+              <p>Acquired knowledge of generative AI concepts, prompt engineering, and AI-powered application development.</p>
+            </article>
+              <article class="certificate-card">
+              <h3>Google Cloud essentials certificate</h3>
+              <p>Learned fundamental cloud computing concepts, Google Cloud services, deployment models, and cloud infrastructure management.</p>
+            </article>
+              <article class="certificate-card">
+              <h3>Infosys Springboard Full stack with Java certificate</h3>
+              <p>Developed end-to-end web applications using Java, databases, and modern web technologies.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-card">
+          <div class="contact-copy">
+            <span class="eyebrow">Get in Touch</span>
+
+            <h2>Ready to build something great together?</h2>
+            <p>Reach out on LinkedIn or GitHub, or send a quick message below.</p>
+            <h4>Gmail: narmadharajan17@gmail.com</h4>
+            <div class="contact-links">
+              <a class="contact-link" href="https://github.com/narmadharajan17-ux" target="_blank" rel="noopener">
+                GitHub
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/narmadha-r-661957291/" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+             
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Fullstack Developer. Crafted with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
